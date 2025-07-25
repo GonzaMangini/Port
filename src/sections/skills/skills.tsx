@@ -1,5 +1,5 @@
-import { FaJs, FaNodeJs, FaHtml5, FaCss3Alt, FaGit, FaDatabase, FaGoogleDrive, FaReact, FaWindows, FaWordpress } from 'react-icons/fa';
-import { SiTypescript, SiGo, SiTailwindcss, SiMicrosoftword, SiMicrosoftexcel, SiAdobephotoshop } from 'react-icons/si';
+import { FaJs, FaNodeJs, FaHtml5, FaCss3Alt, FaGit, FaDatabase, FaGoogleDrive, FaReact, FaWindows, FaWordpress, FaFileWord, FaFileExcel } from 'react-icons/fa';
+import { SiTypescript, SiGo, SiAdobephotoshop } from 'react-icons/si';
 
 const Skills = () => {
   const skills = [
@@ -20,8 +20,8 @@ const Skills = () => {
       items: [
         { name: 'Git', icon: <FaGit className="text-red-600" /> },
         { name: 'Google Drive', icon: <FaGoogleDrive className="text-green-500" /> },
-        { name: 'Excel', icon: <SiMicrosoftexcel className="text-green-700" /> },
-        { name: 'Word', icon: <SiMicrosoftword className="text-blue-700" /> },
+        { name: 'Excel', icon: <FaFileExcel className="text-green-700" /> },
+        { name: 'Word', icon: <FaFileWord className="text-blue-700" /> },
         { name: 'Photoshop', icon: <SiAdobephotoshop className="text-blue-400" /> },
       ],
     },

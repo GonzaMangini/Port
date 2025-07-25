@@ -21,6 +21,7 @@ const StarBackground: React.FC = () => {
     let animationId: number;
 
     function resize() {
+      if (!canvas) return;
       width = window.innerWidth;
       height = Math.max(window.innerHeight, document.documentElement.scrollHeight);
       canvas.width = width;
@@ -40,6 +41,7 @@ const StarBackground: React.FC = () => {
     }));
 
     function drawBackground() {
+      if (!ctx) return;
       // Night gradient
       const gradient = ctx.createLinearGradient(0, 0, 0, height);
       gradient.addColorStop(0, "#05080f");
@@ -49,6 +51,7 @@ const StarBackground: React.FC = () => {
     }
 
     function drawStars() {
+      if (!ctx) return;
       for (const star of stars) {
         ctx.save();
         ctx.globalAlpha = star.alpha;
@@ -103,6 +106,7 @@ const StarBackground: React.FC = () => {
     }
 
     function drawShootingStars() {
+      if (!ctx) return;
       for (const s of shootingStars) {
         ctx.save();
         ctx.globalAlpha = s.alpha;
